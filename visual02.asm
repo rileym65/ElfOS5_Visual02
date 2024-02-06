@@ -1,6 +1,5 @@
 .list
 
-#include ../macros.inc
 
 ; *******************************************************************
 ; *** This software is copyright 2020 by Michael H Riley          ***
@@ -10,8 +9,10 @@
 ; *** without express written permission from the author.         ***
 ; *******************************************************************
 
-#include    ../bios.inc
-#include    ../kernel.inc
+#include    macros.inc
+#include    bios.inc
+#include    kernel.inc
+
 exitaddr:  equ     o_wrmboot
 #define    FTYPE   o_type
 #define    FINMSG  o_inmsg
